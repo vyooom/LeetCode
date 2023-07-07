@@ -9,11 +9,7 @@ def strStr(haystack: str, needle: str) -> int:
     c = a-b
     if c<0:
         return -1
-    elif c==0:
-        if haystack == needle:
-            return 0
-        else:
-            return -1
+
     else:
         for i in range(c+1):
             if haystack[i:i+b] == needle:
